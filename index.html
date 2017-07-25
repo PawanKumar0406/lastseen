@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            input{
+                 display: block;
+                 padding-bottom: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div data-ng-app="commercialApp">
+            <form data-ng-controller="loginController">
+                <div>
+                    <input type="text" data-ng-model="username" id="username" placeholder="Username"/>
+                    <input type="password" data-ng-model="password" id="password" placeholder="Password"/>
+                    <input type="submit" data-ng-click="login()" id="login" value="Login"/>
+                </div>
+                
+            </form>
+        </div>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="client/JS/app.js"></script>
+        <script src="client/JS/loginController.js"></script>
+        <script src="client/JS/commercialAppFactory.js"></script>
+
+    </body>
+</html>
